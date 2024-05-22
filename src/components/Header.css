@@ -1,0 +1,68 @@
+/* Använd ett modernt sans-serif typsnitt */
+/* Använd ett modernt sans-serif typsnitt */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #1f1f1f; /* Mörk bakgrundsfärg */
+  color: #f1f1f1; /* Ljusa textfärger */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtil skugga */
+}
+
+.header .logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #ffffff; /* Accentfärg för logotyp */
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.header nav ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s;
+}
+
+.header nav ul li::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #6eff61; /* Accentfärg för underline */
+  left: 0;
+  bottom: -2px;
+  transition: width 0.3s;
+}
+
+.header nav ul li:hover {
+  color: #285a23; /* Färgförändring vid hover */
+}
+
+.header nav ul li:hover::after {
+  width: 100%;
+}
+
+.header .sign-in {
+  background-color: #19e612; /* Accentfärg för knappen */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px; /* Rundade hörn */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.header .sign-in:hover {
+  background-color: #0a3008;
+  transform: scale(1.05); /* Lätt förstoring vid hover */
+}

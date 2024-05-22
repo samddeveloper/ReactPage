@@ -1,0 +1,33 @@
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #f8f8f8;
+  background-image: url('/src/assets/abstract.jpg'); /* Ange sökvägen till din bild här */
+  background-size: cover; /* Justera storleken på bakgrundsbilden för att täcka hela elementet */
+  background-position: center; /* Centrera bakgrundsbilden */
+}
+
+  
+  .main-section .text-content {
+    max-width: 50%;
+  }
+  
+  .main-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .main-section p {
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .main-section .image-content img {
+    max-width: 35%;
+    border-radius: 15px;
+  }
+  
